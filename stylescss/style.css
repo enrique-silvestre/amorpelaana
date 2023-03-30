@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Arvo :ital,wght@1,700 & display=swap');
+
+:root{
+    --cor-primaria: #8b0000; 
+    --cor-secundaria: aliceblue;
+    --cor-terciaria: gold;
+    --cor-quartenaria: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabeçalho{
+ padding: 5% 0 0 10%;
+}
+.menu{
+    display: flex;
+    gap: 40px;
+}
+.home{
+   font-family: 'Aton', sans-serif;
+   color: var(--cor-terciaria);
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-decoration: none;
+
+}
+.apresentacao{ 
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+}
+.apresentacao__conteudo{
+    width: 600px;
+    flex-direction: column;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+}
+.destaque1{
+    color: var(--cor-terciaria);
+}
+.paragrafo_1 {
+    font-size: 1.125rem;
+    font-family: 'Aton', sans-serif;
+}
+.ancora{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.subtitulo{
+    font-family: 'Arvo', serif;
+}
+.ancora_1{
+    border: 2px solid var(--cor-quartenaria);
+    color: var(--cor-quartenaria);
+    font-family: 'Aton', sans-serif;
+    width: 50%;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 1.25rem;
+    padding: 50px, 0;
+    text-decoration: none;
+}
+.ancora_1:hover{
+    background-color: var(--cor-terciaria);
+    padding: 2%;
+}
+.imagem{
+    width: 70%;
+}
+.rodape{
+    color: var(--cor-quartenaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    padding: 24px;
+    font-family: 'Aton', sans-serif;
+    font-weight: 400;
+}
+@media ( max-width: 800px) {
+    .cabeçalho{
+        padding: 10%;
+    }
+    .menu{
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column;
+    }
+   .apresentacao__conteudo{
+    width: auto;
+   }
+}
